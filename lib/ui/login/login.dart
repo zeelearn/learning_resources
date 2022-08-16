@@ -87,6 +87,8 @@ class _MyLoginState extends State<MyLogin> {
                     if(formKey.currentState!.validate()) {
                       formKey.currentState!.save();
                       Get.to(() => const MainPage());
+                      Get.snackbar("Success", "Login SuccessFully",colorText:const Color(0xffea1a27),
+                          backgroundColor: Colors.white );
 
                     }
 

@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'Settings.dart';
-import 'alerts.dart';
-import 'contacts.dart';
+import 'settings/Settings.dart';
+import 'alert/alerts.dart';
 import 'home/homepage.dart';
-import 'inbox_tab.dart';
 
 class MainPage extends StatefulWidget {
   final int index;
@@ -35,7 +32,7 @@ class _MainPageState extends State<MainPage> {
     return WillPopScope(
       onWillPop: () async {
         bool willLeave = false;
-         HomePage();
+         const HomePage();
         // show the confirm dialog
         await showDialog(
             context: context,
@@ -59,7 +56,6 @@ class _MainPageState extends State<MainPage> {
         return willLeave;
       },
       child: Scaffold(
-
         drawer:  Drawer(
           child: ListView(
             children: [
