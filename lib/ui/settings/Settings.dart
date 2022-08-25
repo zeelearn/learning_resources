@@ -5,10 +5,13 @@ class SettingPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body:  Center(
-        child: Text("Settings",style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.bold,color: Colors.black),),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Settings"),
       ),
+      body: SingleChildScrollView(
+        child: Column(),
+      )
     );
   }
 }

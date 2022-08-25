@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
 class ObservationController extends GetxController{
+  TextEditingController fieldOne = TextEditingController();
+  TextEditingController fieldTwo = TextEditingController();
+  TextEditingController fieldThree = TextEditingController();
+  TextEditingController fieldFour = TextEditingController();
+  TextEditingController fieldFive = TextEditingController();
+
   final List<String> culmination = [
     'Select Culmination',
     'Culmination 1',
@@ -12,22 +18,22 @@ class ObservationController extends GetxController{
   ];
 
   final List<String> week = [
-    'Select Week',
-    'Second Week',
-    'Third Week',
-    'Fourth Week',
-    'Fifth Week',
-    'Sixth Week',
-    'Seventh Week',
+    '1',
+    '2',
+    '3',
+    '4',
+    '5',
+    '6',
+
   ];
   final List<String> day = [
     'Select Day',
-    'Monday',
-    'Tuesday',
-    'Wednesday',
-    'Thursday',
-    'Friday',
-    'Saturday',
+    '1',
+    '2',
+    '3',
+    '4',
+    '5',
+    '6',
   ];
 
   final List<String> session = [
